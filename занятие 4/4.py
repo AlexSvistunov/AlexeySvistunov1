@@ -1,7 +1,7 @@
-N = int(input('Введите целое число N: '))
-count = 0
-sum = 0
-while count !=N:
-    sum+=int(input("Введите число: "))
-    count+=1
-print("Сумма чисел равна:",sum)
+n = int(input('Введите целое число N: '))
+def F(x):
+    sum = 0
+    for i in range(x):
+        sum+=int(input("Введите число: "))
+    return(sum)
+print("Сумма чисел равна:",F(n))

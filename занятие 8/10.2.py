@@ -1,2 +1,5 @@
 ez = input('Введите предложение: ').split(' ')[::-1]
-print(' '.join(ez))
+def F(x):
+    global ez
+    print(' '.join(ez))
+F(ez)

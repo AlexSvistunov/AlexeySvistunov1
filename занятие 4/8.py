@@ -1,8 +1,11 @@
 n = int(input("Введите количество ступенек: "))
-while n > 9 or n <=0:
-    print("Неверно! Введите число от 1 до 9!")
-    n = int(input("Введите количество ступенек: "))
-for i in range(n):
-    for z in range(1,i+2):
-        print(z,end='')
-    print()
+def F(x):
+    if x > 9 or x < 1:
+        print ("Неверно! Введите числа от 1 до 9!")
+        n = int(input("Введите количество ступенек: "))
+    else:
+        for i in range (1, x+1):
+            for k in range(1, i+1):
+                print (k, sep='', end='')
+            print()
+F(n)
